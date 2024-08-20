@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import "@/vendor/bootstrap/css/bootstrap.min.css";
+import "@/assets/css/fontawesome.css";
+import "@/assets/css/templatemo-onix-digital.css";
+import "@/assets/css/animated.css";
+// import "@/assets/css/owl.css";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import Fotter from "@/components/Fotter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+        {children}
+       <Fotter/>
+      </body>
     </html>
   );
 }
