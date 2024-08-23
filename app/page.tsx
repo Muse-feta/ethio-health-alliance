@@ -3,6 +3,7 @@ import About2 from '@/components/About2'
 import Blogs from '@/components/Blogs'
 import Departments from '@/components/Departments'
 import Departement from '@/components/Departments'
+import Donate from '@/components/Donate'
 import Event from '@/components/Event'
 import Hero from '@/components/Hero'
 import Nav from '@/components/Nav'
@@ -21,6 +22,7 @@ const page = (props: Props) => {
       <Departments/>
       <Event />
       <Blogs />
+      <Donate/>
     </div>
   );
 }

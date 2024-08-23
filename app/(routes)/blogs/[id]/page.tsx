@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useRouter } from "next/router"; // Import useRouter for URL parameters
 import { client, urlFor } from "@/lib/sanityClient"; // Adjust the import path as needed
 import Event from "@/components/Event";
+import Image from "next/image";
 
 interface Blog {
   id: string;
@@ -64,7 +64,7 @@ const SingleBlog = ({ params }: { params: Params }) => {
 
   return (
     <div>
-      <Event/>
+      <Event />
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-center items-center mt-9">
           <div className="w-full max-w-4xl mx-8">
@@ -77,11 +77,16 @@ const SingleBlog = ({ params }: { params: Params }) => {
         </div>
 
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src={blog.image}
-            alt={blog.title}
-            className="w-full h-64 object-cover"
-          />
+          <div className="relative w-full h-[300px]">
+            {" "}
+            {/* Control the height here */}
+            <Image
+              src={blog.image}
+              alt={blog.title}
+              fill
+              className="object-cover" // Ensures the image covers the area
+            />
+          </div>
           <div className="p-4">
             <p className="text-gray-600 text-sm mb-4">{blog.date}</p>
             <div

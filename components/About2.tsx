@@ -1,25 +1,35 @@
 import Image from "next/image";
-import img from "@/assets/images/about3.png"
+import img from "@/assets/images/customAbout.jpg";
 
 const About2 = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 md:py-20  ">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 md:py-20  "
+    >
       <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-10">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
           <span className="text-[#03a4ed]">Discover</span>{" "}
           <span className="text-[#ff7067]">Our Story</span>
         </h2>
-        
+
         <p className="text-sm md:text-lg leading-relaxed">
-          We are more than just a company; we are a team of passionate
-          professionals dedicated to bringing you the best. Our commitment to
-          excellence and innovation sets us apart in the industry, and we are
-          constantly evolving to meet the needs of our clients. Join us on our
-          journey to make a lasting impact.
+          Welcome to Ethio Health Alliance, where passion meets purpose in the
+          heart of community health. Our story began with a simple yet powerful
+          vision: to unite dedicated health professionals and students in a
+          shared mission to uplift and transform community health. As a
+          registered nonprofit organization, we’ve channeled our expertise and
+          enthusiasm into a series of impactful health screenings and
+          educational events, each one a step towards a healthier, more informed
+          community. Our journey is driven by a commitment to not only enhance
+          the wellbeing of those we serve but also to empower our members. We
+          believe in building capacity from within, fostering skills and
+          knowledge that enable our team to lead community-based outreach
+          programs with confidence and compassion. Through this collaborative
+          effort, we aim to give back to the community that inspires us,
+          creating ripples of positive change and paving the way for a brighter,
+          healthier future for all.
         </p>
-        <button className="mt-8 px-6 py-3 bg-[#1d71a5] text-white font-bold rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-          Our Blogs
-        </button>
       </div>
       <div className="w-full md:w-1/2">
         <Image

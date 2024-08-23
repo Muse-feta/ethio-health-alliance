@@ -868,16 +868,16 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
+/* .main-banner:after {
   content: '';
-  /* background-image: url(../images/baner-dec-left.png); */
+  background-image: url(../images/customBanner.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 100px;
   width: 267px;
   height: 532px;
-}
+} */
 
 .main-banner:before {
   content: '';

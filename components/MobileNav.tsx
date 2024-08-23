@@ -29,8 +29,8 @@ const MobileNav = (props: Props) => {
           <SheetHeader>
             <SheetTitle className="mt-[20px]">Ethio Health Aliance</SheetTitle>
             <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              Join us as we continue to write our story, one health initiative
+              at a time. 
             </SheetDescription>
           </SheetHeader>
           <nav className="mt-20">
@@ -40,6 +40,9 @@ const MobileNav = (props: Props) => {
               </li>
               <li className="mt-2">
                 <a href="#about">About Us</a>
+              </li>
+              <li className="mt-2">
+                <a href="#departments">Departments</a>
               </li>
               <li className="mt-2">
                 <Link href="/blogs">Blogs</Link>

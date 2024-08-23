@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { client, urlFor } from "../lib/sanityClient"; // Adjust the import path as needed
 import Link from "next/link";
+import Image from "next/image";
 
 interface Blog {
   id: string;
   title: string;
   date: string;
   image: string;
+  width: number;
 }
 
 const Blogs: React.FC = () => {
@@ -79,9 +81,11 @@ const Blogs: React.FC = () => {
             key={blog.id}
             className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-xs mx-2 mb-4"
           >
-            <img
+            <Image
               src={blog.image}
               alt={blog.title}
+              height={30}
+              width={400}
               className="w-full h-64 object-cover"
             />
             <div className="p-4">

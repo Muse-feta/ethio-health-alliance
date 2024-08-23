@@ -27,14 +27,14 @@ const MainNav = (props: Props) => {
             <a href="#about">About Us</a>
           </li>
           <li className="">
+            <a href="#departments">Departments</a>
+          </li>
+          <li className="">
             <a href="/blogs">Blogs</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
-        
-         
-         
         </ul>
       </nav>
     </div>

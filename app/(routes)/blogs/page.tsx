@@ -4,6 +4,7 @@ import axios from "axios";
 import { client, urlFor } from "@/lib/sanityClient"; // Adjust the import path as needed
 import Event from "@/components/Event";
 import Link from "next/link";
+import Image from "next/image"; // Import Image component
 
 interface Blog {
   id: string;
@@ -12,7 +13,6 @@ interface Blog {
   image: string;
 }
 
-type Params = { id: string };
 const Blogs: React.FC = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
@@ -45,7 +45,7 @@ const Blogs: React.FC = () => {
 
   return (
     <div>
-        <Event/>
+      <Event />
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-center items-center mt-9">
           <div className="w-full max-w-4xl mx-8">
@@ -70,15 +70,21 @@ const Blogs: React.FC = () => {
               key={blog.id}
               className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-xs mx-2 mb-4"
             >
-              <img
+              <Image
                 src={blog.image}
                 alt={blog.title}
+                width={400} // Adjust the width according to your needs
+                height={256} // Adjust the height according to your needs
                 className="w-full h-64 object-cover"
+                layout="responsive"
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
                 <p className="text-gray-600 text-sm mb-4">{blog.date}</p>
-                <Link href={`/blogs/${blog.id}`} className="bg-[#2487ce] text-white py-2 px-4 rounded-full hover:bg-[#1d70a4] transition-colors duration-300">
+                <Link
+                  href={`/blogs/${blog.id}`}
+                  className="bg-[#2487ce] text-white py-2 px-4 rounded-full hover:bg-[#1d70a4] transition-colors duration-300"
+                >
                   Read More
                 </Link>
               </div>
