@@ -3,12 +3,19 @@
 @tailwind utilities;
 
 .custom-main-banner-xyz {
-  background-image: url('../assets/images/customBanner.jpg');
+  background-image: url('../assets/images/customHomeBanner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 37rem; /* Equivalent to h-96 in Tailwind */
   position: relative;
+}
+
+@media (max-width: 640px) {
+  /* This applies to screens smaller than 640px (Tailwind's sm breakpoint) */
+  .custom-main-banner-xyz {
+    height: 50rem; /* Equivalent to h-60 in Tailwind */
+  }
 }
 
 .custom-main-banner-overlay-xyz {

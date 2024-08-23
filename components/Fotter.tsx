@@ -15,6 +15,8 @@ const Fotter = (props: Props) => {
               <a href="mailto:info@ethiohealthalliance.org">
                 info@ethiohealthalliance.org
               </a>
+              <br />
+              <a href="tel:+251911747604">Phone: +251-9-11-74-76-04</a>
               <ul className="flex space-x-4">
                 <li>
                   <a
@@ -67,7 +69,7 @@ const Fotter = (props: Props) => {
                   <a href="#about">What We Do</a>
                 </li>
                 <li>
-                  <a href="#about">Parteners</a>
+                  <a href="#departments">Departments</a>
                 </li>
                 <li>
                   <a href="#">EHA Structure</a>
@@ -107,16 +109,10 @@ const Fotter = (props: Props) => {
           <div className="col-lg-12">
             <div className="copyright">
               <p>
-                Copyright © 2024 Ethio Health Aliance., All Rights Reserved.
+                Copyright © 2024 Ethio Health Alliance., All Rights Reserved.
                 <br />
                 Developed by{" "}
-                <a
-                  rel="nofollow"
-                  href="tel:+251985322632"
-                  title="Call SynYod Digital Solution"
-                >
-                  SynYod Digital Solution
-                </a>
+                <a href="tel:+251985322632">SynYod Digital Solution | +251-9-85-32-26-32 | Muse Feta.</a>
                 <br />
               </p>
             </div>

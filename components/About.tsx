@@ -24,8 +24,8 @@ const About = (props: Props) => {
             <div className="col-lg-6">
               <div className="section-heading">
                 <h2>
-                  Building <em>Health,</em> &amp;{" "}
-                  <span>Empowering Community </span> Together
+                  Building Healthy society <em>and,</em> {" "}
+                  <span>Empowering Health professionals </span> and students
                 </h2>
                 <p>
                   Join us as we continue to write our story, one health
@@ -36,9 +36,7 @@ const About = (props: Props) => {
                   <div className="col-lg-4">
                     <div className="fact-item">
                       <div className="count-area-content">
-                        <div className="icon">
-                         
-                        </div>
+                        <div className="icon"></div>
                         <div className="count-digit">100+</div>
                         <div className="count-title">Members</div>
                         <p>
@@ -51,9 +49,7 @@ const About = (props: Props) => {
                   <div className="col-lg-4">
                     <div className="fact-item">
                       <div className="count-area-content">
-                        <div className="icon">
-                          
-                        </div>
+                        <div className="icon"></div>
                         <div className="count-digit">250+ </div>
                         <div className="count-title">Volunteers</div>
                         <p>
@@ -66,9 +62,7 @@ const About = (props: Props) => {
                   <div className="col-lg-4">
                     <div className="fact-item">
                       <div className="count-area-content">
-                        <div className="icon">
-                          
-                        </div>
+                        <div className="icon"></div>
                         <div className="count-digit">15+</div>
                         <div className="count-title">projects</div>
                         <p>

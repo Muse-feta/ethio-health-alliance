@@ -7,7 +7,7 @@ const Hero = (props: Props) => {
     <div className="custom-main-banner-xyz">
       <div className="custom-main-banner-overlay-xyz">
         <h1 className="custom-main-banner-title-xyz">
-          Ethio Health Alliance students
+          Ethio Health Alliance
         </h1>
         <p className="custom-main-banner-description-xyz">
           Ethio Health Alliance is a community of health professionals and

@@ -19,7 +19,7 @@ const MainNav = (props: Props) => {
   return (
     <div className="hidden md:flex">
       <nav className="main-menu d-none d-lg-inline-block">
-        <ul className=" flex gap-5 font-bold mt-[35px] text-xl">
+        <ul className=" flex gap-4 font-bold mt-[35px] text-xl">
           <li className="">
             <a href="/">Home</a>
           </li>
@@ -31,6 +31,9 @@ const MainNav = (props: Props) => {
           </li>
           <li className="">
             <a href="/blogs">Blogs</a>
+          </li>
+          <li className="">
+            <a href="#donate">Donate</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

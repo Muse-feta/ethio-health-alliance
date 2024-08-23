@@ -27,16 +27,16 @@ const MobileNav = (props: Props) => {
         </SheetTrigger>
         <SheetContent className="mt-[20px]">
           <SheetHeader>
-            <SheetTitle className="mt-[20px]">Ethio Health Aliance</SheetTitle>
+            <SheetTitle className="mt-[20px]">Ethio Health Alliance</SheetTitle>
             <SheetDescription>
               Join us as we continue to write our story, one health initiative
-              at a time. 
+              at a time.
             </SheetDescription>
           </SheetHeader>
           <nav className="mt-20">
             <ul className=" list-none gap-5 text-black">
               <li className="">
-                <a href="home-medical-clinic.html">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="mt-2">
                 <a href="#about">About Us</a>
@@ -46,6 +46,9 @@ const MobileNav = (props: Props) => {
               </li>
               <li className="mt-2">
                 <Link href="/blogs">Blogs</Link>
+              </li>
+              <li className="mt-2">
+                <a href="#donate">Donate</a>
               </li>
               <li className="mt-2">
                 <a href="#contact">Contact</a>
