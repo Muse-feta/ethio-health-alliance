@@ -71,7 +71,7 @@ const Departments: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // Change slide every 3 seconds
+    }, 8000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [handleNext]);

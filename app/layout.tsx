@@ -14,7 +14,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ethio Health Aliance",
-  description: "Ethio Health Aliance is a non profit organization", 
+  description:
+    "Ethio Health Alliance is a community of health professionals and students committed to empowering its members and implementing impactful community outreach projects.",
 };
 
 export default function RootLayout({

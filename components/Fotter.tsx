@@ -72,7 +72,7 @@ const Fotter = (props: Props) => {
                   <a href="#departments">Departments</a>
                 </li>
                 <li>
-                  <a href="#">EHA Structure</a>
+                  <a href="/org-structure">EHA Structure</a>
                 </li>
               </ul>
             </div>
