@@ -13,7 +13,7 @@ import TopNavbar from "@/components/TopNavbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ethio Health Aliance",
+  title: "Ethio Health Alliance",
   description:
     "Ethio Health Alliance is a community of health professionals and students committed to empowering its members and implementing impactful community outreach projects.",
 };
